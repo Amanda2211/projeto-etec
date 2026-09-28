@@ -1,0 +1,17 @@
+projeto-etec/
+│
+├── .github/
+│   ├── CODEOWNERS             <-- Garante que o aluno seja dono apenas do seu arquivo
+│   └── PULL_REQUEST_TEMPLATE.md  <-- Padroniza o envio do PR
+├── alunos/
+│   ├── _modelo.html           <-- Template base para os alunos copiarem
+│   ├── aluno01.html
+│   ├── ...
+│   └── aluno40.html
+├── css/
+│   └── estilo.css             <-- CSS global com variáveis e reset básico
+├── imagens/
+│   └── .gitkeep               <-- Mantém a pasta no versionamento
+├── index.html                 <-- Hub principal (grade com cards/links para cada aluno)
+├── README.md                  <-- Guia principal (Apostila e passo a passo)
+└── CONTRIBUTING.md            <-- Regras de contribuição do repositório

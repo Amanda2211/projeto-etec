@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turma ETEC - Portfólio Coletivo</title>
+    <!-- Fonte Inter via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="header-main">
+        <div class="container">
+            <span class="badge">Projeto Prático GitHub</span>
+            <h1>Galeria de Talentos - Turma ETEC</h1>
+            <p>Projeto colaborativo desenvolvido para praticar versionamento de código, Pull Requests e trabalho em equipe.</p>
+            
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <strong id="total-alunos">40</strong>
+                    <span>Estudantes</span>
+                </div>
+                <div class="stat-item">
+                    <strong>100%</strong>
+                    <span>Colaborativo</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Git</strong>
+                    <span>Workflow Real</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container main-content">
+        
+        <!-- Barra de Busca -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar aluno por nome ou número..." onkeyup="filtrarAlunos()">
+        </div>
+
+        <!-- Grade com 40 Cards de Alunos -->
+        <div class="grid-alunos" id="gridAlunos">
+
+            <!-- Card Aluno 01 -->
+            <article class="card-aluno">
+                <div class="card-header">
+                    <span class="num-aluno">#01</span>
+                    <img src="imagens/placeholder.png" alt="Foto Aluno 01" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+01&background=0d6efd&color=fff'">
+                </div>
+                <div class="card-body">
+                    <h3>Aluno 01</h3>
+                    <p class="tagline">Desenvolvedor em Formação</p>
+                    <a href="alunos/aluno01.html" class="btn-perfil">Ver Perfil</a>
+                </div>
+            </article>
+
+            <!-- Card Aluno 02 -->
+            <article class="card-aluno">
+                <div class="card-header">
+                    <span class="num-aluno">#02</span>
+                    <img src="imagens/placeholder.png" alt="Foto Aluno 02" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+02&background=0d6efd&color=fff'">
+                </div>
+                <div class="card-body">
+                    <h3>Aluno 02</h3>
+                    <p class="tagline">Desenvolvedor em Formação</p>
+                    <a href="alunos/aluno02.html" class="btn-perfil">Ver Perfil</a>
+                </div>
+            </article>
+
+            <!-- Repetição até o Aluno 40 (Estrutura gerada para todos) -->
+            <!-- Os cards restantes seguem exatamente este padrão -->
+            
+            <!-- Exemplo compactado para os alunos 03 a 39 no HTML final -->
+            <!-- Aluno 03 -->
+            <article class="card-aluno"><div class="card-header"><span class="num-aluno">#03</span><img src="imagens/placeholder.png" alt="Foto" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+03&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 03</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno03.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 04 -->
+            <article class="card-aluno"><div class="card-header"><span class="num-aluno">#04</span><img src="imagens/placeholder.png" alt="Foto" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+04&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 04</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno04.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 05 -->
+            <article class="card-aluno"><div class="card-header"><span class="num-aluno">#05</span><img src="imagens/placeholder.png" alt="Foto" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+05&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 05</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno05.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 06 -->
+            <article class="card-aluno"><div class="card-header"><span class="num-aluno">#06</span><img src="imagens/placeholder.png" alt="Foto" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+06&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 06</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno06.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 07 -->
+            <article class="card-aluno"><div class="card-header"><span class="num-aluno">#07</span><img src="imagens/placeholder.png" alt="Foto" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+07&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 07</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno07.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 08 -->
+            <article class="card-aluno"><div class="card-header"><span class="num-aluno">#08</span><img src="imagens/placeholder.png" alt="Foto" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+08&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 08</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno08.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 09 -->
+            <article class="card-aluno"><div class="card-header"><span class="num-aluno">#09</span><img src="imagens/placeholder.png" alt="Foto" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+09&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 09</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno09.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 10 -->
+            <article class="card-aluno"><div class="card-header"><span class="num-aluno">#10</span><img src="imagens/placeholder.png" alt="Foto" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+10&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 10</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno10.html" class="btn-perfil">Ver Perfil</a></div></article>
+
+            <!-- Cards 11 a 39 continuam a mesma estrutura... -->
+            <!-- Aluno 11 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#11</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+11&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 11</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno11.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 12 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#12</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+12&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 12</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno12.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 13 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#13</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+13&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 13</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno13.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 14 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#14</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+14&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 14</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno14.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 15 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#15</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+15&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 15</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno15.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 16 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#16</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+16&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 16</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno16.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 17 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#17</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+17&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 17</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno17.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 18 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#18</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+18&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 18</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno18.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 19 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#19</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+19&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 19</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno19.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 20 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#20</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+20&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 20</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno20.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 21 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#21</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+21&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 21</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno21.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 22 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#22</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+22&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 22</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno22.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 23 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#23</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+23&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 23</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno23.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 24 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#24</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+24&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 24</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno24.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 25 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#25</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+25&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 25</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno25.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 26 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#26</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+26&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 26</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno26.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 27 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#27</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+27&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 27</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno27.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 28 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#28</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+28&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 28</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno28.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 29 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#29</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+29&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 29</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno29.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 30 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#30</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+30&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 30</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno30.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 31 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#31</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+31&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 31</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno31.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 32 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#32</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+32&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 32</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno32.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 33 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#33</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+33&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 33</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno33.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 34 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#34</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+34&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 34</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno34.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 35 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#35</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+35&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 35</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno35.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 36 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#36</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+36&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 36</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno36.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 37 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#37</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+37&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 37</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno37.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 38 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#38</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+38&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 38</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno38.html" class="btn-perfil">Ver Perfil</a></div></article>
+            <!-- Aluno 39 --> <article class="card-aluno"><div class="card-header"><span class="num-aluno">#39</span><img src="imagens/placeholder.png" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+39&background=0d6efd&color=fff'"></div><div class="card-body"><h3>Aluno 39</h3><p class="tagline">Desenvolvedor em Formação</p><a href="alunos/aluno39.html" class="btn-perfil">Ver Perfil</a></div></article>
+
+            <!-- Card Aluno 40 -->
+            <article class="card-aluno">
+                <div class="card-header">
+                    <span class="num-aluno">#40</span>
+                    <img src="imagens/placeholder.png" alt="Foto Aluno 40" class="avatar-aluno" onerror="this.src='https://ui-avatars.com/api/?name=Aluno+40&background=0d6efd&color=fff'">
+                </div>
+                <div class="card-body">
+                    <h3>Aluno 40</h3>
+                    <p class="tagline">Desenvolvedor em Formação</p>
+                    <a href="alunos/aluno40.html" class="btn-perfil">Ver Perfil</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer-main">
+        <div class="container">
+            <p>&copy; Projeto Didático ETEC - Ensino Técnico em Desenvolvimento de Sistemas.</p>
+        </div>
+    </footer>
+
+    <!-- Script Simples para Filtragem na Tela -->
+    <script>
+        function filtrarAlunos() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let cards = document.getElementsByClassName('card-aluno');
+
+            for (let i = 0; i < cards.length; i++) {
+                let nome = cards[i].querySelector('h3').innerText.toLowerCase();
+                let num = cards[i].querySelector('.num-aluno').innerText.toLowerCase();
+                if (nome.includes(input) || num.includes(input)) {
+                    cards[i].style.display = "flex";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
