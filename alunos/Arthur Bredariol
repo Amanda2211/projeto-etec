@@ -13,7 +13,7 @@
     </header>
 
     <main class="container-perfil">
-        <img src="blob:https://web.whatsapp.com/47d46553-c92b-40ea-85b5-58c61de1ecf8" alt="Foto do Aluno" class="foto-perfil">
+        <img src="Arthur Bredariol" alt="Foto do Aluno" class="foto-perfil">
         <section class="bio">
             <h2>Sobre mim</h2>
             <p>Estudante da ETEC - Rosa Perrone Scavone.</p>
