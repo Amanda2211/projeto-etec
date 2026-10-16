@@ -13,7 +13,7 @@
     </header>
 
     <main class="container-perfil">
-        <img src="emily.JPNG" alt="Foto do Aluno" class="Emily">
+        <img src="imagens/emily.png" alt="Foto do Aluno" class="Emily">
         <section class="bio">
             <h2>Sobre mim</h2>
             <p> Tenho 15 anos, curso desesnvolvimento de sistemas na Etec Rosa Perrone p>
